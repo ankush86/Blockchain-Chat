@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Start -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Custome CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Blockchain Chat</title>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery1-12-4.js"></script>
+
+  <!-- web3 js -->
+  <script src="js/web3.min.js"></script>
+  <!-- ethereum wallet js -->
+  <script src="js/ethereumjs-wallet-0.6.0.min.js"></script>
+
+  <script>
+  	  web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/"));
+  </script>
+</head>
+<!-- Head End -->
+
+<!-- Body Start -->
+<body>
+
+  <div style="float: left;">
+		New Message: <input placeholder="Say Hi" type="text" id="NewMessage">
+	  <button type="submit" onclick="newMessage()">Send</button>
+	</div>
+
+	<div style="float: right;">
+		New Name: <input placeholder="Satoshi Nakamoto" type="text" id="NewName">
+	  <button type="submit" onclick="newName()">Update Name</button>
+	</div>
+
+	<h2 style="text-align: center;">Ropsten Blockchain Chat Messages <span id="TotalMessages"></span></h2>
+	<div id="chat_list"></div>
+
+  <script src="js/contract.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  	var userPrivateKey = "0x8221d4c7909899e0f60a43c7a5f0e1b83428fbb7b846db57d6cb36858c2353d7";
+  	var userPublicKey = "0xCDAF6Ad0F51067Baf43d07bBbF1e7114a4589fE4";
+  	getNonce();
+  </script>
+</body>
+<!-- Body End -->
+</html>

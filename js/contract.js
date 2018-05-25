@@ -1,0 +1,6 @@
+// Blockchain chat contract address
+const blockchainChatAddress = "0x93E680a8Ed98EC7e99B7451c5a10507b6EeC6Ae6";
+// Blockchain chat contract ABI
+const blockchainChatABI =
+
+[{"constant":false,"inputs":[{"name":"_message","type":"string"}],"name":"newMessage","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_name","type":"string"}],"name":"updateName","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"messages","outputs":[{"name":"from","type":"address"},{"name":"message","type":"string"},{"name":"time","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"timeCalled","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"totalMessages","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"userName","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"}]
